@@ -19,9 +19,9 @@ contract Election{
         addCandidate("Donald Trump");
     }
     
-    function addCandidate(string memory _candidate) private{
+    function addCandidate(string memory _name) private{
         candidateCount++;
-        candidates[candidateCount] = Candidate(candidateCount,_candidate,0);
+        candidates[candidateCount] = Candidate(candidateCount,_name,0);
     }
     function vote(uint _candidateId) public{
         require(!voter[msg.sender]);
