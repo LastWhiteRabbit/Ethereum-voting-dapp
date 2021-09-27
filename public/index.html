@@ -119,14 +119,13 @@
         });
 
         async function getCandidate(cad){
-            console.log(myContract.methods);
-             await myContract.methods.candidates(cad, function(err, result){
-                if (!err) {
+            await myContract.methods.candidates(cad).call().then(function(err,result){
+            if (!err) {
                     console.log("result : ", result);
                     document.getElementById("cad" + cad).innerHTML = result[1];
                     document.getElementById("cad"+cad+'count').innerHTML = result[2].toNumber();
                 }
-            });
+        });
         }
 
     </script>

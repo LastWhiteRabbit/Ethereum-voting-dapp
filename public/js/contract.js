@@ -1,4 +1,4 @@
-var SmartContractABI = [
+var SmartContractABI = 
 [
 	{
 		"inputs": [],
@@ -92,8 +92,6 @@ var SmartContractABI = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-]
-	
 ];
 
-var SmartContractAddress = "0x64EeE64c552dF16B3335b7063cF84847987491b4";
+var SmartContractAddress = "0x35511a854cdf4a12573Eef82D9E4b2D097a4C4d7";
